@@ -1,4 +1,4 @@
-#Mon Jul 01 13:14:10 BRT 2019
+#Tue Jul 02 15:08:44 BRT 2019
 base.0=/home/aluno/Yasuda/ReactTF/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

@@ -10,15 +10,15 @@ export default class Main extends Component{
 	};
 
 	state = {
-		data: []
+		data: null
 	};
 
 	componentDidMount(){
 		this.loadProducts();
 	}
 	loadProducts = async() => {
-		const response = await api.get(`/manga`);
-		const { data } = response.data;
+		const response = await api.get(`/mangamark/manga`);
+		const { data } = response;
 		this.setState({ data });
 	};
 	renderItem = ({item}) => {
@@ -26,19 +26,13 @@ export default class Main extends Component{
 			<View style={styles.productContainer}>
 
 
-				<Text style={styles.productTitle}>{item.attributes.titles.en_us}</Text>
+				<Text style={styles.productTitle}>{item.title}</Text>
+
+				<Image source={{url: item.url }} style={{width: 30, height: 30}}/>
 
 
 
-				{/*<Image
-					style={styles.stretch}
-					source={{ item.attributes.posterImage.original }}
-				/>*/}
-
-
-
-
-				<Text style={styles.productDescription}>{item.attributes.synopsis}</Text>
+				<Text style={styles.productDescription}>{item.description}</Text>
 				<TouchableOpacity
 				style={styles.productButton}
 				onPress={()=>{this.props.navigation.navigate("Product", {product: item});

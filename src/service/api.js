@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://kitsu.io/api/edge'
+    baseURL: 'http://jonatassn.servegame.com/api'
 });
 
 export default api;

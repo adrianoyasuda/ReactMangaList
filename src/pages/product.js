@@ -3,12 +3,12 @@ import React from 'react';
 
 import { Text, WebView } from 'react-native';
 
-const Product = ({ navigation }) => (
-  <WebView source={{ uri: navigation.state.params.product.attributes.posterImage.original }}/>
+const Mangas = ({ navigation }) => (
+  <WebView source={{ uri: navigation.state.params.product.url }}/>
 );
 
-Product.navigationOptions = ({ navigation }) => ({
+Mangas.navigationOptions = ({ navigation }) => ({
 title: navigation.state.params.product.title
 });
 
-export default Product;
+export default Mangas;

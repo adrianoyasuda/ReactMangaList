@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Jul 01 13:14:10 BRT 2019
+#Tue Jul 02 15:08:45 BRT 2019
 5.base=/home/aluno/Yasuda/ReactTF/android/app/build/intermediates/transforms/mergeJniLibs/debug/0
 42.base=/home/aluno/Yasuda/ReactTF/android/app/build/intermediates/transforms/mergeJniLibs/debug/0
 22.path=lib/x86/libimagepipeline.so
